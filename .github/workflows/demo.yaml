@@ -7,7 +7,7 @@ jobs:
     steps:
       - run: echo "github actions demo"
       - name: Check out repository code
-        run: actions/checkout@v4
+        uses: actions/checkout@v4
       - run: echo "The repository {{ github.repository }} repository has been checked out"
       - name: List all files in repository
         run: |
